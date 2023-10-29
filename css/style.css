@@ -5,12 +5,231 @@ body {
 
 .wrap {
     background: var(--Background, #2b2b2b);
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: 10000px;
 }
 
 .container {
     max-width: 1280px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-nav-link {
+    color: #fff;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+}
+
+.header-btn {
+    color: #fff;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: 20px;
+    background: var(--Call-to-Action, #a259ff);
+    display: flex;
+    height: 60px;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 67px;
+    font-weight: 600;
+    text-transform: capitalize;
+    max-width: 510px;
+}
+
+.hero-text {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    max-width: 510px;
+}
+
+.hero-btn {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    height: 60px;
+    padding: 0px 50px;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--Call-to-Action, #a259ff);
+    margin: 30px 0 30px 0;
+    border: none;
+}
+
+.hero-indicator {
+    display: flex;
+    gap: 80px;
+}
+
+.hero-total-title {
+    color: var(--White, #fff);
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.hero-total-text {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 23.99px;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.hero-block2 {
+    border-radius: 20px 20px 20px 20px;
+    background: var(--Background---Secondary, #3b3b3b);
+    max-width: 510px;
+}
+
+.hero-img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-subtext {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.hero-subtext {
+    padding: 0 0 0 20px;
+}
+
+.hero-Space-Walking {
+    display: flex;
+    gap: 12px;
+    margin: 0 0 0 20px;
+}
+
+.hero-img-text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media screen and (max-width: 850px) {
+    .hero-title {
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+        max-width: 330px;
+    }
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-total-title {
+        font-family: Space Mono;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 160%;
+    }
+
+    .hero-total-text {
+        color: var(--White, #fff);
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .header-nav-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero-title {
+        font-size: 30px;
+    }
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .header-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-title {
+        font-family: Work Sans;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin: 10px 0 0 0;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .hero-indicator .hero-block2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .header-btn {
+        display: none;
+    }
 }
