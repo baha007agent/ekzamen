@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1050px;
     height: 100%;
     margin: 0 auto;
     padding: 0 20px 0 20px;
@@ -140,6 +140,7 @@ body {
     font-weight: 600;
     line-height: 140%;
     text-transform: capitalize;
+    padding: 0 0 0 20px;
 }
 
 .hero-subtext {
@@ -158,6 +159,87 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+}
+
+.collection {
+    margin: 160px 0 0 0;
+}
+
+.collection-title {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.collection-text {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 60px 0;
+}
+
+.collection-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.collection-block-img1 img {
+    max-width: 330px;
+}
+
+.collection-img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-block-img2 img {
+    max-width: 330px;
+}
+
+.collection-img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-img1 {
+    display: flex;
+    gap: 15px;
+}
+
+.collection-img3 {
+    padding: 41px 17px;
+    border-radius: 20px;
+    background: var(--Call-to-Action, #a259ff);
+}
+
+.collection-img4 {
+    margin: 15px 0 10px 0;
+}
+
+.collection-footer-img {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.collection-footer-text {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1070px) {
+    .collection-block-img2 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -200,6 +282,18 @@ body {
     .hero__content {
         display: flex;
         flex-direction: column;
+    }
+    .collection-title {
+        font-size: 28px;
+    }
+    .collection-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .collection-block-img5 {
+        display: none;
     }
 }
 
