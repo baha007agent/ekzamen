@@ -317,6 +317,13 @@ body {
     margin: 20px 0 0 0;
 }
 
+.creators-block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
 .creators-grid-text {
     color: var(--caption-label-text, #858584);
     text-align: center;
@@ -343,6 +350,44 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
+}
+
+.browse-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.browse__content {
+    margin: 160px 0 80px 0;
+}
+
+.browse-title {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 0 60px 0;
+}
+
+.browse-block {
+    border-radius: 20px;
+    background: #3b3b3b;
+}
+
+.browse-img {
+    width: 100%;
+}
+
+.browse-subtitle {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+    align-self: stretch;
+    padding: 0 0 0 30px;
 }
 
 @media screen and (max-width: 1070px) {
@@ -381,6 +426,14 @@ body {
 
     .header-nav-link {
         display: none;
+    }
+
+    .browse-img {
+        height: 142px;
+    }
+    .browse-subtitle {
+        max-width: 150px;
+        height: 67px;
     }
 }
 
@@ -434,10 +487,21 @@ body {
         justify-content: center;
         flex-direction: column;
     }
+    .browse-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .browse-subtitle {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .collection-block-img5 {
+        display: none;
+    }
+
+    .creators-btn {
         display: none;
     }
 }
@@ -445,10 +509,6 @@ body {
 @media screen and (max-width: 435px) {
     .header-btn {
         display: none;
-    }
-    .creators__content button {
-        display: flex;
-        align-items: flex-end;
     }
 }
 
@@ -474,5 +534,10 @@ body {
 
     .header-btn {
         display: none;
+    }
+
+    .browse-subtitle {
+        padding: 0;
+        text-align: center;
     }
 }
